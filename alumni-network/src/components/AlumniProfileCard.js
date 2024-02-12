@@ -2,6 +2,7 @@
 
 import React from 'react';
 
+
 const AlumniProfileCard = ({ alumni }) => {
   return (
     <div className="profile-card">

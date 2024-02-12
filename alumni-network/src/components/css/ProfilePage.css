@@ -5,12 +5,12 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8); /* Use rgba for transparency */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   font-family: 'Arial', sans-serif;
- /* background-image: url(''); 
+  /* background-image: url(''); 
   background-size: cover; 
   background-position: center; */
 }

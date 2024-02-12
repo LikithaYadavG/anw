@@ -1,8 +1,9 @@
 // ContactUsPage.js
 
 import React, { useState } from 'react';
-import './css/ContactUsPage.css';
+import './css/Contactus.css';
 import Footer from '../components/Footer';
+import { IoLogoClosedCaptioning } from "react-icons/io";
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
@@ -32,88 +33,36 @@ const ContactUsPage = () => {
   };
 
   return (
-    <div className="background-container ">
-    <div className="contact-container">
-     <center><h2 className="contact-header">Contact Us</h2></center>
-      <p className="contact-details">
-        If you have any questions, feedback, or need assistance, please reach out to us. Alumni are always
-        welcome to connect!
-      </p>
+    
+    <div className="contactus">  
+      <div className='d-flex container kava'>
+        <div className='col-lg-6 col-sm-12 image-sec'>
 
-      <p className="contact-details">
-        You can also use the form below to contact us:
-      </p>
-
-      {formSubmitted ? (
-        <div className="success-message">
-          Thank you for reaching out! We'll get back to you soon.
+          <IoLogoClosedCaptioning />Hello
         </div>
-      ) : (
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Your Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        <div className='col-lg-6 col-sm-12 form-sec' >
 
-          <div className="form-group">
-            <label htmlFor="email">Your Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+          <form action="process_form.php" method="post" className='form'>
+            <h1 >Contact Us </h1>
+            <input type="text" id="name" name="name" required placeholder='Name'/>
 
-          <div className="form-group">
-            <label htmlFor="graduationYear">Graduation Year:</label>
-            <input
-              type="text"
-              id="graduationYear"
-              name="graduationYear"
-              value={formData.graduationYear}
-              onChange={handleChange}
-            />
-          </div>
+            
+            <input type="email" id="email" name="email" required placeholder='Email' />
 
-          <div className="form-group">
-            <label htmlFor="major">Major:</label>
-            <input
-              type="text"
-              id="major"
-              name="major"
-              value={formData.major}
-              onChange={handleChange}
-            />
-          </div>
+           
+            <input type="number" id="subject" name="subject" required placeholder='Phone Number'  />
 
-          <div className="form-group">
-            <label htmlFor="message">Your Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
+            
+            <textarea id="message" name="message" rows="4" required placeholder='Type here'/>
 
-          <button type="submit">Submit</button>
-        </form>
-      )}
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+
+
     </div>
-    <Footer/>
-    </div>
+  
   );
 };
 

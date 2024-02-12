@@ -3,8 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import './css/ProfilePage.css'; // Import the CSS file for styling
 import Footer from '../components/Footer';
+import { v4 as uuidv4 } from 'uuid';
 
 const ProfilePage = () => {
+  console.log(uuidv4());
+
   const [user, setUser] = useState({
     firstName: 'John',
     lastName: 'Doe',

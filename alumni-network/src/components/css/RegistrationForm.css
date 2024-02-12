@@ -1,0 +1,71 @@
+/* RegistrationForm.css */
+
+/* Container styling */
+.custom-registration-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Heading styling */
+  .custom-form-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Increase heading font size */
+  }
+  
+  /* Form group styling */
+  .custom-form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styling */
+  .custom-label {
+    display: block;
+    margin-bottom: 8px; /* Slightly increased margin */
+    font-weight: bold;
+  }
+  
+  /* Input field styling */
+  .custom-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  .custom-input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+  }
+  
+  /* Submit button styling */
+  .custom-submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .custom-error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  

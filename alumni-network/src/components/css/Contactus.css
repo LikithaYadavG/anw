@@ -1,0 +1,45 @@
+.contactus {
+    margin: 2rem 1rem;
+
+}
+
+body {
+
+}
+.kava {
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.284);
+    padding: 0rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+
+}
+
+h1{
+    color: var(#333);
+}
+
+.image-sec {
+    background-image: url('../../components/images/Profile.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-sec {
+
+    input,
+    textarea {
+        width: 80%;
+        display: block;
+        margin: 1rem 0rem;
+    }
+}
+
+.form {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
